@@ -1,21 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    float A, B, C, areaTraphisium, perimeterTriangle ;
-
-    scanf("%f %f %f", &A, &B, &C);
-
-    if ((A < (float)(B+C)) && (B < (float)(A+C)) && (C < (float)(B+A)))
+    int A, B;
+    scanf("%d %d", &A, &B);
+    if (B % A == 0 || A % B == 0)
     {
-        perimeterTriangle = A + B + C;
-        printf("Perimetro = %.1f\n",perimeterTriangle);
-
-
+        printf("Sao Multiplos\n");
     }
     else
     {
-        areaTraphisium = ((A + B) * C) / 2;
-        printf("Area = %.1f\n",areaTraphisium);
+        printf("Nao sao Multiplos\n");
     }
     return 0;
 }
