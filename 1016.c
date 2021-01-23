@@ -9,4 +9,5 @@ int main(){
     printf("%d minutos\n", (2 * distance));
 
     return 0;
+}
 
